@@ -2105,47 +2105,51 @@ footer {
 }
 
 .pr-de-rt {
-  
+
   padding-left: 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.pr-de-rt.pr-de-scrn-1
-{
+
+.pr-de-rt.pr-de-scrn-1 {
   width: 42%;
 }
-.pr-de-rt.pr-de-scrn-2
-{
-  width: 85%;
+
+.pr-de-rt.pr-de-scrn-2 {
+  width: calc(100% - 650px);
 }
+
 .pr-de-lt.pr-de-scrn-1 {
   width: 58%;
 }
-.pr-de-lt-1
-{
 
-display: grid;
+.pr-de-lt-1 {
 
-grid-template-columns: 1fr 1fr;
+  display: grid;
 
-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
 }
-.pr-de-lt-1 a{
 
-display: inline-block;
+.pr-de-lt-1 a {
 
-width: 100%;
+  display: inline-block;
 
-height: 100%;
+  width: 100%;
+
+  height: 100%;
 }
-.pr-de-lt-1 a img{
-  
-width: 100%;
-  
-height: 100%;
-  
-object-fit: contain;
+
+.pr-de-lt-1 a img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
 }
+
 .qty-container .plus {
   background-color: transparent;
   border: 2px solid #CBCBCB;
@@ -2164,16 +2168,19 @@ object-fit: contain;
   flex-direction: column;
   gap: 13px;
 }
-.deliveryCode p{
 
-margin: 0;
+.deliveryCode p {
+
+  margin: 0;
 }
-.deliveryCode p img{
 
-width: 21px;
+.deliveryCode p img {
 
-margin-right: 11px;
+  width: 21px;
+
+  margin-right: 11px;
 }
+
 .index-header {
   font-size: 16px;
   font-weight: 700;
@@ -2416,4 +2423,203 @@ margin-right: 11px;
 
 .prd-review .prd-review-list .inner .testi-content h3 {
   font-size: 14px;
+}
+
+#exzoom {
+  width: 650px;
+  /*height: 400px;*/
+}
+
+.prd_cart-box {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #eaeaec;
+  position: relative;
+}
+.cart-wrap
+{
+  display: flex;
+  gap: 30px;
+}
+.cart-lt, .cart-rt {
+  width: 50%;
+margin-top: 25px;
+}
+
+.cart-box {
+  display: grid;
+  gap: 15px;
+}
+
+.prd_cart-box .prd_img {
+  width: 175px;
+  height: 175px;
+  margin-right: 15px;
+}
+
+.prd_cart-box .qty-container {
+  margin-top: 3px;
+  margin-bottom: 13px;
+  padding-left: 10px;
+}
+
+.prd_cart-box .qty-container .minus {
+  border-width: 1px;
+  padding: 3px 10px;
+  font-size: 21px;
+  margin-right: 8px;
+  line-height: 24px;
+}
+
+.prd_cart-box .qty-container .plus {
+  border-width: 1px;
+  padding: 3px 10px;
+  font-size: 21px;
+  margin-left: 8px;
+  line-height: 24px;
+}
+
+.prd_cart-box .qty-container .quantity {
+  font-size: 20px;
+  border-width: 1px;
+  min-width: 85px;
+}
+
+.delete-item {
+  position: absolute;
+  bottom: 12px;
+  right: 15px;
+  /* width: 14px; */
+  /* height: 14px; */
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: transparent;
+}
+
+.containe {
+  display: block;
+  position: relative;
+  padding-left: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  font-size: 12px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 0;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+}
+
+/* Hide the browser's default checkbox */
+.containe input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.containe .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #E1E1E1;
+  border-radius: 3px;
+  overflow: hidden;
+  border: none;
+}
+
+/* On mouse-over, add a grey background color */
+.containe:hover input~.checkmark {
+  background-color: var(--red);
+}
+
+/* When the checkbox is checked, add a blue background */
+.containe input:checked~.checkmark {
+  background-color: #ff7878;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.containe .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containe input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containe .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 6px;
+  height: 11px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.priceBlock-base-priceHeader {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 0px 0 15px;
+  color: #535766;
+  border-bottom: 1px solid #eaeaec;
+  padding-bottom: 15px;
+}
+.priceDetail-base-redesignRow, .priceDetail-base-row {
+  margin-bottom: 12px;
+  line-height: 16px;
+}
+.priceBreakUp-base-orderSummary {
+  font-size: 14px;
+}
+.priceDetail-base-value {
+  float: right;
+}
+.priceDetail-base-discount {
+  color: #03a685;
+}
+.priceDetail-base-total {
+  font-weight: 700;
+  font-size: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eaeaec;
+  color: #3e4152;
+  line-height: 16px;
+  margin-top: 3px;
+
+}
+.css-ibwr57 {
+  font-size: 14px;
+  padding: 10px 16px;
+  width: 100%;
+  letter-spacing: 1px;
+  font-weight: 700;
+  border-radius: 2px;
+  border-width: 0px;
+  background-color: var(--main);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.priceBlock-base-container
+{
+  border: 1px solid #eaeaec;
+  padding: 15px;
+  margin-bottom: 15px;
 }

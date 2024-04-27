@@ -59,7 +59,7 @@
                     </div>
                     <div class="prd_i_grd">
                         <div class="prd_list_box">
-                            <a href="#" class="prd_list_box_a">
+                            <a href="product-details.php" class="prd_list_box_a">
                                 <div class="prd_img position-relative">
                                     <img src="images/20c-400x400.jpg" class="w-100 h-100">
                                     <i class="fas fa-heart wishlisted"></i>

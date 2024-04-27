@@ -10,14 +10,35 @@
                 </ol>
             </nav>
             <div class="pr-de-wrap">
-                <div class="pr-de-lt pr-de-scrn-1">
-                    <div class="pr-de-lt-1">
+                <div class="pr-de-lt pr-de-scrn-2">
+                    <div class="pr-de-lt-1 d-none">
                         <a href="#"><img src="https://pub-715557ae6bc24ac8ae7df4a03e2e8ed5.r2.dev/products-1/isla/20d-400x400.jpg" class="img-fluid" title="" alt="Isla"></a>
                         <a href="#"><img src="https://pub-715557ae6bc24ac8ae7df4a03e2e8ed5.r2.dev/products-1/isla/20d-400x400.jpg" class="img-fluid" title="" alt="Isla"></a>
                         <a href="#"><img src="https://pub-715557ae6bc24ac8ae7df4a03e2e8ed5.r2.dev/products-1/isla/20d-400x400.jpg" class="img-fluid" title="" alt="Isla"></a>
                     </div>
+                    <div class="exzoom hidden" id="exzoom">
+                        <div class="exzoom_img_box">
+                            <ul class='exzoom_img_ul'>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                                <li><img src="images/20c-400x400.jpg" /></li>
+                            </ul>
+                        </div>
+                        <div class="exzoom_nav"></div>
+                        <p class="exzoom_btn">
+                            <a href="javascript:void(0);" class="exzoom_prev_btn"><i class="far fa-chevron-left"></i></a>
+                            <a href="javascript:void(0);" class="exzoom_next_btn"><i class="far fa-chevron-right"></i></a>
+                        </p>
+                    </div>
                 </div>
-                <div class="pr-de-rt pr-de-scrn-1">
+                <div class="pr-de-rt pr-de-scrn-2">
                     <div class="pr-de-rt-1">
                         <h2 class="pr-de-head">Isla</h2>
                         <h3 class="pr-de-subhead">Croc Nov Women Grey Tote Bag</h3>
@@ -299,6 +320,14 @@
         $('.faq-clk').click(function() {
             $(this).parent().find(".f_b").slideToggle();
         });
+    });
+</script>
+<script type="text/javascript">
+    $('.pr-de-lt').imagesLoaded(function() {
+        $("#exzoom").exzoom({
+            autoPlay: false,
+        });
+        $("#exzoom").removeClass('hidden')
     });
 </script>
 

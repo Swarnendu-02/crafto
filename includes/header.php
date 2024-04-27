@@ -20,8 +20,11 @@
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.js"></script>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.exzoom.js"></script>
+    <link href="css/jquery.exzoom.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
     <header class="main-header style-one">
         <!-- header-lower -->
