@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-  max-width: 95%;
+  max-width: 100%;
 }
 
 .py-6 {
@@ -292,6 +292,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  text-transform: capitalize;
 }
 
 .prd_des h3 {
@@ -411,13 +412,16 @@ body {
   font-size: 11px;
   color: #9d9d00;
 }
-
-.prd_img .wishlisted {
+.prd_img .wishlist
+{
   position: absolute;
   right: 10px;
   top: 10px;
-  color: #f15959;
+  color: #bdbdbd;
   filter: drop-shadow(0 0 10px #00000038);
+}
+.prd_img .wishlisted, .prd_img .wishlist:hover {
+  color: #f15959;
 }
 
 .desktop-backdropStyle,
@@ -2622,4 +2626,42 @@ margin-top: 25px;
   border: 1px solid #eaeaec;
   padding: 15px;
   margin-bottom: 15px;
+}
+.prd_i_grd_land
+{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.prd_i_grd_land .prd_list_box_a
+{
+  display: flex;
+  align-items: center;
+}
+.prd_des_box
+{
+  position: relative;
+}
+.prd_i_grd_land .prd_list_box_a .prd_img
+{
+  width: 205px;
+}
+.prd_i_grd_land .prd_des_box {
+  position: relative;
+  width: calc(100% - 205px);
+}
+
+.prd_i_grd_land .prd_des_box .prd_footer {
+  position: relative;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  bottom: 0px !important;
+  background: transparent;
+}
+.prd_fotter-fix .prd_des_box .prd_footer
+{
+  position: relative;
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+  bottom: 0px !important;
 }

@@ -96,7 +96,7 @@
     <div class="auto_container">
         <div class="bottom_inner  p_relative">
             <div class="copyright">
-                <p>Copyright ©2024 Conference. All Rights Reserved</p>
+                <p>Copyright ©2024 Crafto. All Rights Reserved</p>
             </div>
         </div>
     </div>
